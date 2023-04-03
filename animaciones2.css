@@ -1,0 +1,13 @@
+.btn-modern{
+    border: none;
+    color:darkred;
+    background-color:darkgray;
+}
+
+.btn-modern:hover{
+    transition: 0.4s;
+    color: black;
+    background-color: cornflowerblue;
+    box-shadow: inset;
+    transform: translateY(-5px);
+}
