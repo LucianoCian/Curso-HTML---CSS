@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, rgb(0 0 0 / .85), rgb(0 0 0 / .25)) ,url(fondo.png);
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    background-position: center;
+}
+
+header{
+    position: absolute;
+    background-color: #222;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+img{
+    margin-left: 50px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.cont-ul{
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 130px;
+    position: absolute;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: all .3s ease 0s;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    
+}
+
+li:hover{
+    background-color: #4ad295;
+    transition: .5s;
+}
+
+.ul-second{
+    position: absolute;
+    display: none;
+    transform: translateY(20px);
+}
+
+.ul-second>li{
+    border-bottom: solid 1px #fff;
+    text-align: center;
+    background-color: #222;
+    width: 190px;
+    transform: translateX(-20px);
+    padding: 20px;
+}
+
+.ul-second > li:hover{
+    background-color: #4ad295;
+}
+
+.team:hover > .ul-second{
+    display: block;
+}
+
+.temp:hover > .ul-second{
+    display: block;
+}
+
+.history:hover > .ul-second{
+    display: block;
+}
+
+.fixt:hover > .ul-second{
+    display: block;
+}
+
+#texto{
+    color: rgb(255, 140, 0);
+    text-align: center;
+    width: 700px;
+    font-size: 25px;
+    position: absolute; 
+    margin-left: 40px;
+    bottom: 200px;
+}
+
+main{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    display: flex;
+    bottom: 0;
+    position: absolute;
+}
+
+.icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.icon:hover{
+    background-color: #e60073;
+    box-shadow: 0 0 20px #e60073;
+}
+
+.icon:hover:nth-child(2){
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3){
+    background-color: #fe0000;
+    box-shadow: 0 0 20px #fe0000;
+}
+
+.icon:hover:nth-child(4){
+    background-color: #1da1f2;
+    box-shadow: 0 0 20px #1da1f2;
+}
+
+.icon i{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+}
+
+svg circle{
+    stroke-dasharray: 150;
+    transition: all .5s ease-in-out;
+}
+
+.icon:hover circle{
+    stroke-dasharray: 220;
+}
